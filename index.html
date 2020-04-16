@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covied19tracker</title>
+    <link rel="icon" href="./img/virus.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+        .nav-item{
+	padding-left: 3.25rem;}
+    .image{
+        height: 10.5rem;
+        width: 10.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header and nav bar start here -->
+    <header class="mb-0">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <a class="navbar-brand" href="">COVID-19 TRACKER FOR INDIA</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="symptoms.html">Coronavirus(COVID-19)Symptoms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#protect">Precautions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.covid19india.org/essentials">Helpline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="migrant.html">Help For migrant workers</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+  </header>
+  <!-- Nav bar closed here -->
+  <section class="py-3" style="background-color: #e1f2fb;">
+    <div class="container">
+        <h2 class="text-center py-3"> COVID-19 TRACKER FOR INDIA</h2>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <th class="text-primary ml-2" scope="col">CONFIRMED</th>
+                      <th class="text-warning" scope="col">ACTIVE</th>
+                      <th class="text-success" scope="col">RECOVERED</th>
+                      <th class="text-danger" scope="col">DEATH</th>
+                      <th class="text-secondary" scope="col">LAST UPDATE</th>
+                    </tr>
+                    <tbody>
+                        <tr class="Data">
+
+                          </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center mt-5 " id="protect">PRECAUTIONS</h2>
+        <h5 class="text-center my-5">Lockdown means LOCKDOWN! Avoid going out unless absolutely necessary. Stay safe!</h5>
+       
+        <div class="row">
+            <div class="col-sm-4 col-lg-4 size">
+                <h3 class="text-center pb-3">STAY AT HOME</h3>
+                <img class="image" src="./img/stay-at-home.png" alt="stay-at-home">
+                <p class="text-center pt-3">Many people are staying home and practicing social
+                     distancing to avoid spreading the viral disease further</p>
+
+            </div>
+            <div class="col-sm-4 col-lg-4 size">
+                <h3 class="text-center pb-3">WASH YOUR HAND</h3>
+                <img class="image" src="./img/hand-wash.png" alt="stay-at-home">
+                <p class="text-center pt-3">Washing your hands often will help protect you from germs.
+                     If soap and water are not available, use an alcohol-based hand rub.</p>
+
+            </div>
+            <div class="col-sm-4 col-lg-4">
+                <h3 class="text-center pb-3">STAY HEALTHY</h3>
+                <img class="image" src="./img/healthy.png" alt="stay-at-home">
+                <p class="text-center pt-3">especially when someone is ill. Get plenty of sleep,
+                   be physically active, manage your stress, drink plenty of fluids, and eat nutritious food.</p>
+
+            </div>
+        </div>
+        <!-- 2nd row -->
+        <div class="row my-5">
+          <div class="col-sm-4 col-lg-4 size">
+              <h3 class="text-center pb-3">USE FACEMASK</h3>
+              <img class="image" src="./img/face-mask.png" alt="stay-at-home">
+              <p class="text-center pt-3">Cover your mouth and nose when coughing or sneezing. Try to Maintain at least 1 metre distance between 
+                you and people coughing or sneezing.</p>
+
+          </div>
+          <div class="col-sm-4 col-lg-4 size">
+              <h3 class="text-center pb-3">MAINTAIN SOCIAL DISTANCING</h3>
+              <img class="image" src="./img/no-handshake.png" alt="stay-at-home">
+              <p class="text-center pt-3">Practice physical distancing by avoiding unnecessary
+                 travel and staying away from large groups of people.</p>
+
+          </div>
+          <div class="col-sm-4 col-lg-4">
+              <h3 class="text-center pb-3">AVOID TOUCHING YOUR FACE</h3>
+              <img class="image" src="./img/face.png" alt="stay-at-home">
+              <p class="text-center pt-3">Avoid touching your face. and Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</p>
+
+          </div>
+      </div>
+    </div>
+  </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
